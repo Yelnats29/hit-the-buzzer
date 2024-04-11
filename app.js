@@ -25,5 +25,14 @@ function buzzerClicked() {
     clearMessage();
 }
 
+//Funtion to select the cookie of choice
+
+//Show this with a slow timer and then transition in the picture of the selected cookie.
+// My browser game has an example of this with Will and my burger menu has a code for slow transitions.
+
+// Lets also replace the button with the cookie after the selection??
+
+// Can I then replace the cookie with a bit version of it and say a message such as, "I hope you enjoyed that as much as I did" or "such a satisfying crunch" with a crunch audio behind it.
+
 //This makes the button activate
 buzzerBtn.addEventListener('click', buzzerClicked);

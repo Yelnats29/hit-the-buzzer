@@ -28,12 +28,19 @@ body {
   border: 5px solid yellow;
 }
 
+#buzzer:hover {
+  color: hsl(352, 95%, 50%);
+  border: 5px solid red;
+  background-image: url(PICTURE OF CRUMBS);
+}
+
+/* #buzzer:active {
+  background-color: hsl(2, 92%, 48%);
+} */
+
 #message {
   font-size: 19px;
   font-weight: bold;
   color: yellow;
   position: relative;
-  align-items: center;
-  justify-content: center;
-
 }
