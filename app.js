@@ -20,7 +20,7 @@ function clearMessage() {
 //Function for Button Action
 function buzzerClicked() {
     messageDisplay("");
-    messageDisplay("Looks like someone just got a giant cookie!");
+    messageDisplay("Looks like someone just got a giant cookie! Congrats!");
     victory.play();
     clearMessage();
 }
