@@ -6,8 +6,7 @@ body {
   background-image: url(https://img.freepik.com/free-photo/plate-with-fresh-cookies-from-oven_23-2148837150.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1711929600&semt=ais);
   background-size: cover;
   /* Use a system font, if none are available use an available sans-sarif font */
-  font-family: system-ui, sans-serif;
-  /* Ensures full height compatibility across devices */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   min-height: 100dvh;
   margin: 0;
   position: relative;
@@ -18,7 +17,6 @@ body {
 
 
 #buzzer {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   display: flex;
   color: yellow;
   padding: 150px;
@@ -27,14 +25,15 @@ body {
   background-image: url(https://lastcrumb.com/cdn/shop/products/20200627_LastCrumb__AudreyMa_04521.jpg?v=1618324573);
   background-size: cover;
   cursor: pointer;
-  border: 2px solid yellow;
+  border: 5px solid yellow;
 }
 
 #message {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: bold;
   color: yellow;
   position: relative;
   align-items: center;
+  justify-content: center;
 
 }
