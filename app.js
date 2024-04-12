@@ -8,7 +8,6 @@ function randomCookie() {
     return Math.floor(Math.random() * 3) + 1;
 }
 
-
 //Function to get the message to show
 function messageDisplay(message) {
     messageElement.textContent = message
@@ -18,6 +17,12 @@ function messageDisplay(message) {
 function clearMessage() {
     setTimeout(function () {
         messageDisplay("")
+    }, 8000);
+}
+
+//Function to clear cookie image after button press
+function clearImage() {
+    setTimeout(function () {
     }, 8000);
 }
 
@@ -38,12 +43,15 @@ function buzzerClicked() {
         if (cookie === 1) {
             message.textContent = `You got a ${cookies[0]}! It's SUPER sweet!`;
             message.className = 'cookie1';
+            sugarCookieImage.classList.remove('hiddenSugar'); clearImage();
         } else if (cookie === 2) {
             message.textContent = `You got a ${cookies[1]}! Nothing wrong with the classics!`;
             message.className = 'cookie2';
+            chocolateCookieImage.classList.remove('hiddenChocolate'); clearImage();
         } else {
             message.textContent = `You got a ${cookies[2]}! A personal favorite.`;
             message.className = 'coookie3';
+            oatmealCookieImage.classList.remove('hiddenOatmeal'); clearImage();
         }
     }, 4000);
 }
@@ -59,7 +67,9 @@ buzzerBtn.addEventListener('click', buzzerClicked);
 
 
 
-// Lets also replace the button with the cookie after the selection??
+// Fix clearImage Function
 
-// Can I then replace the cookie with a bit version of it and say a message such as, "I hope you enjoyed that as much as I did" or "such a satisfying crunch" with a crunch audio behind it.
+// Round out the cookie images
+
+// Put images at the bottom of messages
 
