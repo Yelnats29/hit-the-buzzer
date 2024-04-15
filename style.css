@@ -19,7 +19,7 @@ body {
 #buzzer {
   display: flex;
   color: yellow;
-  padding: 150px;
+  padding: 2em;
   border-radius: 50%;
   font-size: 50px;
   background-image: url(https://lastcrumb.com/cdn/shop/products/20200627_LastCrumb__AudreyMa_04521.jpg?v=1618324573);
@@ -44,33 +44,29 @@ body {
   font-weight: bold;
   color: yellow;
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cookieImages {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
 }
 
 .hiddenSugar {
 display: none;
-border-radius: 50%
+border-radius: 50px;
 }
 
 .hiddenChocolate {
 display: none;
-border-radius: 50%
+border-radius: 50px;
 }
 
 .hiddenOatmeal {
 display: none;
-border-radius: 50%
+border-radius: 50px;
 }
-
-
-
-/* .cookie1 {
-  background-image: url();
-}
-
-.cookie2 {
-  
-}
-
-.cookie3 {
-  
-} */

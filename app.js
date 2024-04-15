@@ -22,8 +22,11 @@ function clearMessage() {
 
 //Function to clear cookie image after button press
 function clearImage() {
-    setTimeout(function () {
-    }, 8000);
+    setTimeout(() => {
+        sugarCookieImage.classList.add('hiddenSugar');
+        chocolateCookieImage.classList.add('hiddenChocolate');
+        oatmealCookieImage.classList.add('hiddenOatmeal');
+    }, 4000);
 }
 
 
@@ -53,23 +56,8 @@ function buzzerClicked() {
             message.className = 'coookie3';
             oatmealCookieImage.classList.remove('hiddenOatmeal'); clearImage();
         }
-    }, 4000);
+   }, 4000);
 }
 
 //This makes the button activate
 buzzerBtn.addEventListener('click', buzzerClicked);
-
-
-
-
-
-
-
-
-
-// Fix clearImage Function
-
-// Round out the cookie images
-
-// Put images at the bottom of messages
-
